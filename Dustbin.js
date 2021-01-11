@@ -11,7 +11,7 @@ class Dustbin {
         World.add(world, this.body);
     }
     display() {
-        rect(this.body.x, this.body.y, this.width, this.height);
+        rect(this.body.posiiton.x, this.body.position.y, this.width, this.height);
         fill("white");
     }
 }

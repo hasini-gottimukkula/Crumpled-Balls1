@@ -1,6 +1,7 @@
 class Ground {
     constructor(x, y, width, height) {
         var options = {
+            isStatic: true,
             restitution: 0,
             friction: 0,
             density: 1
@@ -11,7 +12,7 @@ class Ground {
         World.add(world, this.body);
     }
     display() {
-        rect(this.body.x, this.body.y, this.width, this.height);
+        rect(this.body.position.x, this.body.position.y, this.width, this.height);
         fill("white");
     }
 }

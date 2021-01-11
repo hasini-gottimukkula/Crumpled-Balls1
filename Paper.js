@@ -12,7 +12,9 @@ class Paper {
         World.add(world, this.body);
     }
     display() {
-        cricle(this.body.x, this.body.y, this.radius);
         fill("pink");
+        ellipse(this.body.position.x, this.body.position.y, this.radius);
+        ellispeMode(Radius);
+
     }
 }
